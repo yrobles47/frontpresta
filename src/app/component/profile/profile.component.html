@@ -1,0 +1,29 @@
+<ul class="navbar-nav align-items-center gap-10"> 
+    <li class="nav-item nav-icon-hover-bg dark rounded-circle d-flex" ngbDropdown placement="bottom-end">
+      <a class="nav-link" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="assets/images/users/user1.jpg" alt="user" class="rounded-circle" width="31" />
+      </a>
+      <div class="dropdown-menu-end user-dd dropdown-menu-animate-up" ngbDropdownMenu>
+        <div class="profile-dropdown position-relative">
+          <div class="py-3 px-7 pb-0">
+            <h5 class="mb-0 fs-5">User Profile</h5>
+          </div>
+          <div class="d-flex align-items-center py-9 mx-7 border-bottom">
+            <img src="assets/images/users/user1.jpg" class="rounded-circle" width="80" height="80" alt="" />
+            <div class="ms-3">
+              <h5  class="mb-1 fs-4">{{ userData.nombre }}</h5>
+              <span class="mb-1 d-block">CEO</span>
+              <p class="mb-0 d-flex align-items-center gap-2">
+                <i-feather name="mail" class="feather-xs d-flex"></i-feather>
+                {{ userData.email }}
+              </p>
+            </div>
+          </div> 
+          <div class="d-grid py-4 px-7 pt-8">
+            <!-- <a [routerLink]="['/authentication/login']" class="btn btn-info">Log Out</a> -->
+            <a (click)="logout()" class="btn btn-info">Log Out</a>
+          </div>
+        </div>
+      </div>
+    </li> 
+  </ul>

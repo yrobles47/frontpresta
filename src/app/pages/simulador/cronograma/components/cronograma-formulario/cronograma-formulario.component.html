@@ -1,0 +1,186 @@
+
+<div class=""> 
+  <div class="" >
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label required text-truncate w-100" for="inputSuccess1">Monto
+            Solicitado</label>
+          <div class="d-flex input-group">
+            <select class="form-select" id="inlineFormCustomSelect">
+              <option selected value="1">S/</option>
+              <option value="2">$</option>
+            </select>
+            <input type="text" class="form-control" id="inputSuccess1" style="width: 45%;" />
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label required text-truncate w-100" for="inputSuccess1">Nro Cuotas</label>
+          <div class="input-group">
+            <select class="form-select mr-sm-2" id="inlineFormCustomSelect">
+              <option selected>0</option>
+              <option *ngFor="let option of opcionPeriodoPagoMeses" [value]="option">{{ option }}</option>
+
+            </select>
+            <label for="" class="input-group-text align-self-center">Meses</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label text-truncate w-100" for="fecha_desembolso">Fecha de
+            desembolso</label>
+          <input type="date" class="form-control" name="fecha_desembolso" [(ngModel)]="fechaDesembolso"
+            id="fecha_desembolso" />
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label  text-truncate w-100" for="inputSuccess1">TEA</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="inputSuccess1" />
+            <label for="" class="input-group-text align-self-center">%</label>
+          </div> 
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label  text-truncate w-100" for="inputSuccess1">TEM</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="inputSuccess1" disabled />
+            <label for="" class="input-group-text align-self-center">%</label>
+          </div> 
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label  text-truncate w-100" for="inputSuccess1">Interes Moratorio</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="inputSuccess1" disabled />
+            <label for="" class="input-group-text align-self-center">%</label>
+          </div> 
+        </div>
+      </div> 
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="form-group mb-3">
+          <label class="form-control-label required text-truncate w-100" for="inputSuccess1">Tipo de
+            contrato</label>
+          <select class="form-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Seleccione...</option>
+            <option value="1">Prueba 1</option>
+            <option value="2">Prueba 2</option>
+            <option value="3">Prueba 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label required text-truncate w-100" for="inputSuccess1">Nro de
+            firmantes</label>
+          <input type="number" class="form-control" id="inputSuccess1" />
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label text-truncate w-100" for="inputSuccess1">Nro de cheques extra</label>
+          <input type="number" class="form-control" id="inputSuccess1" />
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="form-group mb-3">
+          <label class="form-control-label required text-truncate w-100"
+            for="inputSuccess1">Inversionista</label>
+          <select class="form-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Seleccione...</option>
+            <option value="1">Prueba 1</option>
+            <option value="2">Prueba 2</option>
+            <option value="3">Prueba 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label required text-truncate w-100" for="inputSuccess1">Tasación o
+            Gravamen</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="inputSuccess1" />
+            <label for="" class="input-group-text align-self-center">USD</label>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="form-group mb-3">
+          <label class="form-control-label required text-truncate w-100" for="inputSuccess1">Tipo de Valorización</label>
+          <select class="form-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Seleccione...</option>
+            <option value="1">Prueba 1</option>
+            <option value="2">Prueba 2</option>
+            <option value="3">Prueba 3</option>
+          </select>
+        </div>
+      </div> 
+    </div>
+    <div class="row justify-content-start"> 
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label required text-truncate w-100" for="inputSuccess1">Valor
+            Comercial</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="inputSuccess1" />
+            <label for="" class="input-group-text align-self-center">USD</label>
+          </div> 
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label required text-truncate w-100" for="inputSuccess1">Intereses a
+            Pagar</label>
+          <input type="text" class="form-control" id="inputSuccess1" disabled />
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label required text-truncate w-100" for="inputSuccess1">Interes Promedio
+            Anual</label>
+          <input type="text" class="form-control" id="inputSuccess1" disabled />
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label  text-truncate w-100" for="inputSuccess1">% de la deuda</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="inputSuccess1" disabled />
+            <label for="" class="input-group-text align-self-center">%</label>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label text-truncate w-100" for="inputSuccess1">Código anterior</label>
+          <input type="text" class="form-control" id="inputSuccess1" disabled />
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <label class="form-control-label text-truncate w-100" for="inputSuccess1">Monto del
+            financiamiento</label>
+          <div class="input-group">
+            <input type="text" class="form-control" aria-describedby="basic-addon2" />
+            <!-- <button type="button" (click)="openModal()" class="btn mr-0 btn-outline-primary">
+              Calcular
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div > 
+    <app-previsualizar-cronograma [fechaDesembolso]="fechaDesembolso"></app-previsualizar-cronograma>
+  </div> 
+</div> 
+  <app-modal-calculate *ngIf="modalVisible" [tipo]="tipo" (result)="handleDataFromModal($event)"
+  (close)="closeModal()"></app-modal-calculate>
