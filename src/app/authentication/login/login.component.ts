@@ -38,6 +38,7 @@ export class LoginComponent implements OnInit {
     private modalService: NgbModal,
     private router: Router,
     private route: ActivatedRoute,
+
   ) {
     this.loginService.logout();
   }
@@ -75,7 +76,7 @@ export class LoginComponent implements OnInit {
                 this.loginService.loginStatusSubject.next(true);
               }else{
                 //window.location.href = '/home';
-                this.router.navigate(['reporte']);
+                this.router.navigate(['home']);
                 this.loginService.loginStatusSubject.next(true);
               } 
 
